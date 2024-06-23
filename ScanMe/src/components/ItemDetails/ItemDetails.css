@@ -1,0 +1,142 @@
+.menu-details {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  /* background-color: #EEEEEE; */
+  margin-top: 20px;
+  width: 99vw;
+}
+
+.navigation-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  user-select: none;
+}
+
+.left-button {
+  position: absolute;
+  left: 5px;
+  font-size: 1.5rem;
+  top: 50%;
+}
+
+.right-button {
+  position: absolute;
+  right: 5px;
+  font-size: 1.5rem;
+  top: 50%;
+}
+
+.menu-details-content {
+  text-align: center;
+  max-width: 80%;
+  width: 70%;
+  background-color: #373A40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+.menu-details-video{
+  width: 65%;
+  height: auto;
+  border-radius: 10px;
+}
+.menu-details-image {
+  width: 65%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #373A40;
+}
+
+.menu-details-name {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  align-self: flex-start;
+  color: white;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+.menu-details-content-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-top: 0;
+  margin-left: 2.5rem;
+  width: 100%;
+}
+
+.menu-details-content-info .menu-details-calories,
+.menu-details-price {
+  color: yellow;
+  margin-top: 0;
+  font-size: 1.0rem;
+}
+.menu-details-bsp{
+  color: white;
+  font-size: 1rem;
+  margin-top: 2px;
+  
+}
+.menu-details-price{
+  font-weight: bold;
+}
+
+.menu-details-desc{
+  color: wheat;
+  font-size: 1.2rem;
+  text-align: start;
+  width: 90%;
+  padding-left: 2.5rem;
+  margin-top: 0.5rem;
+  line-height: 1;
+  padding-right:2.5rem;
+  text-wrap: wrap;
+}
+.menu-details-button{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  width: 40%;
+  padding: 0.9rem;
+  border-radius: 20px;
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 0);
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin-right: 40%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-details-desc{
+  color: wheat;
+  font-size: 1.2rem;
+  text-align: start;
+  width: 90%;
+  padding-left: 2.5rem;
+  margin-top: 0.5rem;
+  line-height: 1;
+  padding-right:2.5rem;
+  text-wrap: wrap;
+}

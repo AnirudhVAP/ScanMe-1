@@ -11,7 +11,10 @@
     cursor: pointer;
 
   }
-  
+  .menu-item:hover{
+    background-color: rgb(190, 190, 51);
+    color: black;
+  }
   .menu-item-image {
     width: 100px;
     height: 100px;
