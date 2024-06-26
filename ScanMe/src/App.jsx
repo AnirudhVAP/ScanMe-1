@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as  Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AddedItemsProvider } from './components/context/AddedItemsContext';
 import ItemDetails from './components/ItemDetails/ItemDetails';
 import LandingPage from './pages/LandingPage/Landingpage'
