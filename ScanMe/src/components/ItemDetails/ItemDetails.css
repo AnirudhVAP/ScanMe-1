@@ -2,9 +2,12 @@
   display: flex;
   position: relative;
   justify-content: center;
-  /* background-color: #EEEEEE; */
   margin-top: 20px;
   width: 99vw;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  
 }
 
 .navigation-button {
@@ -41,7 +44,7 @@
   border-radius: 20px;
 }
 .menu-details-video{
-  width: 65%;
+  width: 85%;
   height: auto;
   border-radius: 10px;
 }
@@ -99,19 +102,81 @@
   padding-right:2.5rem;
   text-wrap: wrap;
 }
+.menu-details-buttons{
+ margin: 1rem;
+ display: inline-flex;
+ width: 100%;
+}
 .menu-details-button{
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  width: 40%;
-  padding: 0.9rem;
-  border-radius: 20px;
-  border: none;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 0);
-  font-size: 0.8rem;
-  font-weight: 900;
-  margin-right: 40%;
 
+width: auto;
+padding: 0.8rem 1rem;
+margin-left: 2rem;
+color: black;
+background-color: yellow;
+border-radius: 18px;
+border: none;
+font-size: 0.8rem;
+font-weight: 900;
+cursor: pointer;
+}
+
+
+
+
+
+
+.item-combinations {
+  margin-top: 20px;
+}
+
+.combinations-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.combination-item {
+  text-align: center;
+}
+
+.combination-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.combination-item-name {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+
+.menu-details {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 20px;
+  width: 99vw;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.menu-details.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  color: #373A40;
 }
 
 
@@ -120,23 +185,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-.menu-details-desc{
-  color: wheat;
-  font-size: 1.2rem;
-  text-align: start;
-  width: 90%;
-  padding-left: 2.5rem;
-  margin-top: 0.5rem;
-  line-height: 1;
-  padding-right:2.5rem;
-  text-wrap: wrap;
-}

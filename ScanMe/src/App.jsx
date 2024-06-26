@@ -1,18 +1,22 @@
-import { Route, Routes } from "react-router-dom";
-import Landingpage from './pages/LandingPage/Landingpage';
-import Header from "./components/Header/Header";
-import MenuDetails from "./pages/MenuDetails/MenuDetails";
+import React from 'react';
+import { BrowserRouter as  Route, Routes } from 'react-router-dom';
+import { AddedItemsProvider } from './components/context/AddedItemsContext';
+import ItemDetails from './components/ItemDetails/ItemDetails';
+import LandingPage from './pages/LandingPage/Landingpage'
+import AddedItems from './components/AddedItems/AddedItems';
 
-function App() {
+const App = () => {
   return (
-    <>
+    <AddedItemsProvider>
       
-      <Routes>
-        <Route path="/" element={<Landingpage />} />
-        <Route path="/menu/:id" element={<MenuDetails />} />
-      </Routes>
-    </>
+        <Routes>
+          <Route path='/' element={<LandingPage />} />
+          <Route path="/menu/:id" element={<ItemDetails />} />
+          <Route path="/added-items" element={<AddedItems />} />
+        </Routes>
+     
+    </AddedItemsProvider>
   );
-}
+};
 
 export default App;
